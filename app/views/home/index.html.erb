@@ -1,0 +1,40 @@
+<div class="sidebar-left">
+  <a class="logo" href="">
+    <%= image_tag 'logo.png' %>
+  </a>
+
+  <%= link_to 'Register', '#', class: 'register-link', data: { display_form: nil } %>
+</div>
+<div id="content">
+  <div class="quote-overlay">
+    <div class="quote-wrap">
+      <div class="quote">
+        <blockquote>Get early access to our upcoming redesigned platform. The World’s Finest. All In One Place. Discover unique Art, Furniture and Services.</blockquote>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <%= form_tag registration_path, remote: true, class: 'contact-form' do %>
+
+      <%= label_tag :name %>
+      <%= text_field_tag :name %>
+      <%= label_tag :email %>
+      <%= text_field_tag :email %>
+
+      <%= submit_tag 'Submit', data: { submit: nil } %>
+
+    <% end %>
+
+    <p class="address-info">
+      11 madison avenuew<br>
+      New York, NY 10010<br><br>
+      <%= mail_to 'info@lidealist.com' %>
+      <%= mail_to 'press@lidealist.com' %>
+      <!--
+      <a href="mailto:info@111w57.com">info@111w57.com</a><br>
+      <a href="mailto:press@111w57.com">press@111w57.com</a>
+      -->
+    </p>
+  </div>
+</div><!--end #content-->
