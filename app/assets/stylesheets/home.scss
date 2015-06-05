@@ -186,7 +186,6 @@ font {
 img {
 	@extend %extend_1;
 	border: 0;
-	max-width: 100%;
 	height: auto;
 }
 ins {
@@ -561,7 +560,7 @@ button {
 		height: 77px;
 		display: block;
 		background-size: 100% 100%;
-		margin-bottom: 25px;
+		margin-bottom: 60px;
 		&:hover {
 			border-bottom: 0;
 		}
