@@ -4,6 +4,6 @@ class RegisterMailer < ApplicationMailer
   def send_user_data(name, email)
     @name, @email = name, email
 
-    mail to:'info@lidealist.com', subject: 'New user'
+    mail to:'joan@entrision.com', subject: 'New user'
   end
 end
