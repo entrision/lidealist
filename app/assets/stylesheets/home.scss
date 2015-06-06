@@ -1,952 +1,968 @@
-//colors
-$black: black;
-$white: white;
-$color_mountain_mist_approx: #959595;
-$color_domino_approx: #8c7459;
-$color_stack_approx: #8e9090;
-$color_schooner_approx: #8f857b;
-$color_celeste_approx: #ccc;
-
-//fonts
-$font_0: Minion Pro;
-
-//urls
-$url_0: url(../fonts/MinionPro-Regular.eot);
-$url_1: url(../fonts/MinionPro-Regular.otf);
-$url_2: url(../fonts/MinionPro-It.eot);
-$url_3: url(../fonts/MinionPro-It.otf);
-
-//@extend-elements
-//original selectors
-//html, body, div, span, applet, object, iframe, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, label, legend, p, blockquote, table, caption, tbody, tfoot, thead, tr, th, td
-%extend_1 {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-weight: inherit;
-	font-style: inherit;
-	font-size: 100%;
-	font-family: inherit;
-	vertical-align: baseline;
-}
-
-//original selectors
-//input[type=text], input[type=email], input[type=password], input[type=number], textarea
-%extend_2 {
-	//Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
-	border-radius: 0;
-	border: 1px solid $black;
-	background: transparent;
-}
-
-//original selectors
-//.button, input[type=submit], button
-%extend_3 {
-	//Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
-	border-radius: 0;
-	height: 40px;
-	line-height: 1em;
-	padding: 10px;
-	text-align: center;
-	color: $white;
-	background: $black;
-	border: 1px solid $black;
-}
-
-//original selectors
-//.contact-form label, .contact-form input, .contact-form textarea
-%extend_4 {
-	text-align: left;
-	display: block;
-	width: 100%;
-}
-
-//original selectors
-//.contact-form input, .contact-form textarea
-%extend_5 {
-	border: 2px $color_stack_approx solid;
-	margin-bottom: 20px;
-	padding: 7px 6px 6px;
-}
-
-
 @keyframes fadein {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
+  /* line 14, ../scss/_mixins.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 14, ../scss/_mixins.scss */
+  to {
+    opacity: 1;
+  }
 }
+
 @-moz-keyframes fadein {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
+  /* line 15, ../scss/_mixins.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 15, ../scss/_mixins.scss */
+  to {
+    opacity: 1;
+  }
 }
+
 @-webkit-keyframes fadein {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
+  /* line 16, ../scss/_mixins.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 16, ../scss/_mixins.scss */
+  to {
+    opacity: 1;
+  }
 }
+
 @-o-keyframes fadein {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
+  /* line 17, ../scss/_mixins.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 17, ../scss/_mixins.scss */
+  to {
+    opacity: 1;
+  }
 }
-html {
-	@extend %extend_1;
+
+/* line 2, ../scss/_reset.scss */
+html, body, div, span, applet, object, iframe, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, label, legend, p, blockquote, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
 }
+
+/* line 2, ../scss/_reset.scss */
 body {
-	@extend %extend_1;
-	line-height: 1;
-	color: $black;
-	background: $white;
-	color: $color_domino_approx;
+  line-height: 1;
+  color: black;
+  background: white;
 }
-div {
-	@extend %extend_1;
-}
-span {
-	@extend %extend_1;
-}
-applet {
-	@extend %extend_1;
-}
-object {
-	@extend %extend_1;
-}
-iframe {
-	@extend %extend_1;
-}
-a {
-	@extend %extend_1;
-	text-decoration: none;
-	color: $black;
-	color: $color_domino_approx;
-	&:hover {
-		border-bottom: 1px solid $black;
-		img {
-			filter: alpha(opacity=50);
-			opacity: 0.5;
-		}
-	}
-}
-abbr {
-	@extend %extend_1;
-	border: 0;
-}
-acronym {
-	@extend %extend_1;
-	border: 0;
-}
-address {
-	@extend %extend_1;
-	font-style: normal;
-	font-weight: normal;
-}
-big {
-	@extend %extend_1;
-}
-cite {
-	@extend %extend_1;
-	font-style: normal;
-	font-weight: normal;
-}
-code {
-	@extend %extend_1;
-	font-style: normal;
-	font-weight: normal;
-}
-del {
-	@extend %extend_1;
-}
-dfn {
-	@extend %extend_1;
-	font-style: normal;
-	font-weight: normal;
-}
-em {
-	@extend %extend_1;
-	font-style: normal;
-	font-weight: normal;
-}
-font {
-	@extend %extend_1;
-}
-img {
-	@extend %extend_1;
-	border: 0;
-	height: auto;
-}
-ins {
-	@extend %extend_1;
-}
-kbd {
-	@extend %extend_1;
-}
-q {
-	@extend %extend_1;
-	quotes: "" "";
-	&:before {
-		content: "";
-	}
-	&:after {
-		content: "";
-	}
-}
-s {
-	@extend %extend_1;
-}
-samp {
-	@extend %extend_1;
-}
-small {
-	@extend %extend_1;
-}
-strike {
-	@extend %extend_1;
-}
-strong {
-	@extend %extend_1;
-	font-style: normal;
-	font-weight: normal;
-}
-sub {
-	@extend %extend_1;
-}
-sup {
-	@extend %extend_1;
-}
-tt {
-	@extend %extend_1;
-}
-var {
-	@extend %extend_1;
-	font-style: normal;
-	font-weight: normal;
-}
-dl {
-	@extend %extend_1;
-}
-dt {
-	@extend %extend_1;
-}
-dd {
-	@extend %extend_1;
-}
-ol {
-	@extend %extend_1;
-	list-style: none;
-}
-ul {
-	@extend %extend_1;
-	list-style: none;
-}
-li {
-	@extend %extend_1;
-}
-h1 {
-	@extend %extend_1;
-	font-size: 100%;
-	font-weight: normal;
-}
-h2 {
-	@extend %extend_1;
-	font-size: 100%;
-	font-weight: normal;
-}
-h3 {
-	@extend %extend_1;
-	font-size: 100%;
-	font-weight: normal;
-}
-h4 {
-	@extend %extend_1;
-	font-size: 100%;
-	font-weight: normal;
-}
-h5 {
-	@extend %extend_1;
-	font-size: 100%;
-	font-weight: normal;
-}
-h6 {
-	@extend %extend_1;
-	font-size: 100%;
-	font-weight: normal;
-}
-pre {
-	@extend %extend_1;
-}
-form {
-	@extend %extend_1;
-}
-fieldset {
-	@extend %extend_1;
-	border: 0;
-}
-input {
-	@extend %extend_1;
-}
-textarea {
-	@extend %extend_1;
-	@extend %extend_2;
-	&:active {
-		border-color: $black;
-	}
-	&:focus {
-		border-color: $black;
-	}
-}
-label {
-	@extend %extend_1;
-}
-legend {
-	@extend %extend_1;
-}
-p {
-	@extend %extend_1;
-	margin-bottom: .75em;
-	max-width: 800px;
-	&.lg {
-		font-size: 1.5em;
-	}
-	a {
-		border-bottom: 1px solid $color_mountain_mist_approx;
-		&:hover {
-			border-bottom: 1px solid $black;
-		}
-	}
-}
-blockquote {
-	@extend %extend_1;
-	quotes: "" "";
-	&:before {
-		content: "";
-	}
-	&:after {
-		content: "";
-	}
-}
-table {
-	@extend %extend_1;
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-caption {
-	@extend %extend_1;
-	text-align: left;
-	font-weight: normal;
-	font-style: normal;
-	font-weight: normal;
-}
-tbody {
-	@extend %extend_1;
-}
-tfoot {
-	@extend %extend_1;
-}
-thead {
-	@extend %extend_1;
-}
-tr {
-	@extend %extend_1;
-}
-th {
-	@extend %extend_1;
-	text-align: left;
-	font-weight: normal;
-	font-style: normal;
-	font-weight: normal;
-}
-td {
-	@extend %extend_1;
-	text-align: left;
-	font-weight: normal;
-}
+
+/* line 2, ../scss/_reset.scss */
 :focus {
-	outline: 0;
+  outline: 0;
 }
+
+/* line 2, ../scss/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 2, ../scss/_reset.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+
+/* line 2, ../scss/_reset.scss */
+fieldset, img {
+  border: 0;
+}
+
+/* line 2, ../scss/_reset.scss */
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 2, ../scss/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 2, ../scss/_reset.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/* line 2, ../scss/_reset.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+}
+
+/* line 2, ../scss/_reset.scss */
+blockquote, q {
+  quotes: "" "";
+}
+
+/* line 2, ../scss/_reset.scss */
+abbr, acronym {
+  border: 0;
+}
+
 @font-face {
-	font-family: $font_0;
-	src: $url_0, $url_1;
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'Minion Pro';
+  src: url("../fonts/MinionPro-Regular.eot"), url("../fonts/MinionPro-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
 }
+
 @font-face {
-	font-family: $font_0;
-	src: $url_2, $url_3;
-	font-weight: italic;
-	font-style: italic;
+  font-family: 'Minion Pro';
+  src: url("../fonts/MinionPro-It.eot"), url("../fonts/MinionPro-It.otf");
+  font-weight: italic;
+  font-style: italic;
 }
+
+/* line 23, ../scss/_type.scss */
+body {
+  font-family: 'Minion Pro', sans-serif;
+  line-height: 1.75em;
+  color: black;
+  font-size: 15px;
+  -webkit-text-size-adjust: none;
+}
+
+/* line 31, ../scss/_type.scss */
 ::selection {
-	background: $black;
-	color: $white;
+  background: black;
+  color: #fff;
 }
+
+/* line 35, ../scss/_type.scss */
 ::-moz-selection {
-	background: $black;
-	color: $white;
+  background: black;
+  color: #fff;
 }
-input[type=text] {
-	@extend %extend_2;
-	&:active {
-		border-color: $black;
-	}
-	&:focus {
-		border-color: $black;
-	}
+
+/* line 52, ../scss/_type.scss */
+p {
+  margin-bottom: .75em;
+  max-width: 800px;
 }
-input[type=email] {
-	@extend %extend_2;
-	&:active {
-		border-color: $black;
-	}
-	&:focus {
-		border-color: $black;
-	}
+
+/* line 57, ../scss/_type.scss */
+p.lg {
+  font-size: 1.5em;
 }
-input[type=password] {
-	@extend %extend_2;
-	&:active {
-		border-color: $black;
-	}
-	&:focus {
-		border-color: $black;
-	}
+
+/* line 61, ../scss/_type.scss */
+a {
+  -webkit-transition: color 0.2s ease-in-out, border 0.2s ease-in-out, background 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out, border 0.2s ease-in-out, background 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, border 0.2s ease-in-out, background 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out, border 0.2s ease-in-out, background 0.2s ease-in-out;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+  color: black;
 }
-input[type=number] {
-	@extend %extend_2;
-	&:active {
-		border-color: $black;
-	}
-	&:focus {
-		border-color: $black;
-	}
+
+/* line 67, ../scss/_type.scss */
+a:hover {
+  border-bottom: 1px solid black;
 }
-.button {
-	@extend %extend_3;
-	&:hover {
-		border-color: $black;
-		background: $black;
-	}
+
+/* line 71, ../scss/_type.scss */
+p a {
+  border-bottom: 1px solid #959595;
 }
-input[type=submit] {
-	@extend %extend_3;
-	&:hover {
-		border-color: $black;
-		background: $black;
-	}
+
+/* line 75, ../scss/_type.scss */
+p a:hover {
+  border-bottom: 1px solid black;
 }
+
+/* line 84, ../scss/_type.scss */
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+textarea {
+  -webkit-appearance: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border: 1px solid black;
+  background: transparent;
+}
+
+/* line 100, ../scss/_type.scss */
+input[type=text]:active,
+input[type=email]:active,
+input[type=password]:active,
+input[type=number]:active,
+textarea:active,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=number]:focus,
+textarea:focus {
+  border-color: black;
+}
+
+/* line 106, ../scss/_type.scss */
+.button,
+input[type=submit],
 button {
-	@extend %extend_3;
-	&:hover {
-		border-color: $black;
-		background: $black;
-	}
+  -webkit-transition: color 0.2s ease-in-out, border 0.2s ease-in-out, background 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out, border 0.2s ease-in-out, background 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, border 0.2s ease-in-out, background 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out, border 0.2s ease-in-out, background 0.2s ease-in-out;
+  -webkit-backface-visibility: hidden;
+  -webkit-appearance: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  height: 40px;
+  line-height: 1em;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  background: black;
+  border: 1px solid black;
 }
-* {
-	//Instead of the line below you could use @includebox-sizing($bs)
-	box-sizing: border-box;
-	&:before {
-		//Instead of the line below you could use @includebox-sizing($bs)
-		box-sizing: border-box;
-	}
-	&:after {
-		//Instead of the line below you could use @includebox-sizing($bs)
-		box-sizing: border-box;
-	}
+
+/* line 121, ../scss/_type.scss */
+.button:hover,
+input[type=submit]:hover,
+button:hover {
+  border-color: black;
+  background: black;
 }
+
+/* line 23, ../scss/style.scss */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* line 28, ../scss/style.scss */
+body {
+  color: #8C7459;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 33, ../scss/style.scss */
+img {
+  max-width: 150%;
+  height: auto;
+  -webkit-transition: opacity;
+  -moz-transition: opacity;
+  -ms-transition: opacity;
+  -o-transition: opacity;
+  -webkit-backface-visibility: hidden;
+}
+
+/* line 38, ../scss/style.scss */
+a {
+  color: #8C7459;
+}
+
+/* line 41, ../scss/style.scss */
+a:hover img {
+  filter: alpha(opacity=50);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+}
+
+/* line 47, ../scss/style.scss */
 .container {
-	width: 90%;
-	margin: 20% 5% 0 5%;
-	&.foundation-wrap {
-		width: 96%;
-		margin: 0 2%;
-	}
+  width: 90%;
+  margin: 5% 5% 0 5%;
 }
-@media only screen and(min-width: 900px) {
-	.container.foundation-wrap {
-		width: 70%;
-		max-width: 1200px;
-		margin: 0 5% 0 25%;
-	}
+
+/* line 51, ../scss/style.scss */
+.container.foundation-wrap {
+  width: 96%;
+  margin: 0 2% 0 2%;
 }
+@media only screen and (min-width: 900px) {
+  /* line 51, ../scss/style.scss */
+  .container.foundation-wrap {
+    width: 70%;
+    max-width: 1200px;
+    margin: 0 5% 0 25%;
+  }
+}
+
+/* line 61, ../scss/style.scss */
 .quote-overlay {
-	z-index: 4;
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: $white;
-	opacity: 1;
-	visibility: visible;
+  z-index: 4;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.1s ease-in-out, visibility 0.1s ease-in-out;
+  -moz-transition: opacity 0.1s ease-in-out, visibility 0.1s ease-in-out;
+  -ms-transition: opacity 0.1s ease-in-out, visibility 0.1s ease-in-out;
+  -o-transition: opacity 0.1s ease-in-out, visibility 0.1s ease-in-out;
+  -webkit-backface-visibility: hidden;
+  -webkit-animation-name: fadeOut;
+  -moz-animation-name: fadeOut;
+  -o-animation-name: fadeOut;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  -webkit-animation-delay: 7s;
+  -moz-animation-delay: 7s;
+  -o-animation-delay: 7s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
 }
+
 @-webkit-keyframes fadeOut {
-	from {
-		opacity: 1;
-		visibility: visible;
-	}
-	to {
-		opacity: 0;
-		visibility: hidden;
-	}
+  /* line 89, ../scss/style.scss */
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* line 90, ../scss/style.scss */
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
+
 @-moz-keyframes fadeOut {
-	from {
-		opacity: 1;
-		visibility: visible;
-	}
-	to {
-		opacity: 0;
-		visibility: hidden;
-	}
+  /* line 93, ../scss/style.scss */
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* line 94, ../scss/style.scss */
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
+
 @-o-keyframes fadeOut {
-	from {
-		opacity: 1;
-		visibility: visible;
-	}
-	to {
-		opacity: 0;
-		visibility: hidden;
-	}
+  /* line 97, ../scss/style.scss */
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* line 98, ../scss/style.scss */
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
+
+/* line 101, ../scss/style.scss */
 .quote-wrap {
-	display: table;
-	width: 100%;
-	height: 100%;
+  display: table;
+  width: 100%;
+  height: 100%;
 }
+
+/* line 106, ../scss/style.scss */
 .quote {
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-	color: $color_domino_approx;
-	blockquote {
-		margin: 0 auto;
-		max-width: 20%;
-		min-width: 320px;
-		font-size: 40px;
-		line-height: 1.2em;
-		margin-bottom: 2%;
-	}
-	.author {
-		margin: 0 auto;
-		max-width: 20%;
-		font-size: 20px;
-		line-height: 1.5em;
-		text-transform: uppercase;
-	}
-	.source {
-		margin: 0 auto;
-		max-width: 20%;
-		display: block;
-	}
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #8C7459;
 }
+
+/* line 112, ../scss/style.scss */
+.quote blockquote {
+  margin: 0 auto;
+  max-width: 20%;
+  min-width: 320px;
+  font-size: 40px;
+  line-height: 1.2em;
+  margin-bottom: 2%;
+}
+
+/* line 120, ../scss/style.scss */
+.quote .author {
+  margin: 0 auto;
+  max-width: 20%;
+  font-size: 20px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+
+/* line 127, ../scss/style.scss */
+.quote .source {
+  margin: 0 auto;
+  max-width: 20%;
+  display: block;
+}
+
+/* line 132, ../scss/style.scss */
 .sidebar-left {
-	margin: 10%;
-	.logo {
-		width: 200px;
-		height: 77px;
-		display: block;
-		background-size: 100% 100%;
-		margin-bottom: 60px;
-		&:hover {
-			border-bottom: 0;
-		}
-	}
-	.register-link {
-		text-transform: uppercase;
-		letter-spacing: .12em;
-		font-size: 14px;
-		border-bottom: 1px dotted $color_domino_approx;
-		color: $color_domino_approx;
-	}
-	p {
-		margin-top: 10px;
-		max-width: 170px;
-		font-size: 14px;
-		color: $color_domino_approx;
-		line-height: 1.5em;
-	}
+  margin: 10% 10%;
 }
-@media only screen and(min-width: 1024px) {
-	.sidebar-left {
-		z-index: 5;
-		margin-left: 5%;
-		position: fixed;
-		top: 23%;
-	}
+@media only screen and (min-width: 1024px) {
+  /* line 132, ../scss/style.scss */
+  .sidebar-left {
+    z-index: 5;
+    margin-left: 5%;
+    position: fixed;
+    top: 23%;
+  }
 }
+
+/* line 142, ../scss/style.scss */
+.sidebar-left .logo {
+  background-image: url("../images/111w57.svg");
+  width: 200px;
+  height: 77px;
+  display: block;
+  background-size: 100% 100%;
+  margin-bottom: 25px;
+}
+
+/* line 150, ../scss/style.scss */
+.sidebar-left .logo:hover {
+  border-bottom: 0;
+}
+
+/* line 153, ../scss/style.scss */
+.sidebar-left .register-link {
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font-size: 14px;
+  border-bottom: 1px dotted #8C7459;
+  color: #8C7459;
+}
+
+/* line 160, ../scss/style.scss */
+.sidebar-left p {
+  margin-top: 10px;
+  max-width: 170px;
+  font-size: 14px;
+  color: #8C7459;
+  line-height: 1.5em;
+}
+
+/* line 167, ../scss/style.scss */
 .sidebar-right {
-	color: $color_stack_approx;
-	z-index: 3;
-	margin-right: 5%;
-	position: fixed;
-	top: 50%;
-	right: 0;
-	text-align: right;
-	margin-top: -90px;
+  color: #8E9090;
+  z-index: 3;
+  margin-right: 5%;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  text-align: right;
+  margin-top: -90px;
 }
+
+/* line 180, ../scss/style.scss */
 .contact-form {
-	text-align: center;
-	margin: 15% auto 0;
-	max-width: 25%;
-	min-width: 320px;
-	margin-bottom: 4%;
-	label {
-		@extend %extend_4;
-		color: $color_stack_approx;
-		text-transform: uppercase;
-		letter-spacing: .2em;
-	}
-	input {
-		@extend %extend_4;
-		@extend %extend_5;
-	}
-	textarea {
-		@extend %extend_4;
-		@extend %extend_5;
-		border: 2px $color_domino_approx solid;
-		min-height: 100px;
-		resize: none;
-	}
-	input[name=phone] {
-		border: 2px $color_schooner_approx solid;
-	}
-	input[name=city] {
-		border: 2px $color_schooner_approx solid;
-	}
-	input[name=broker] {
-		border: 2px $color_schooner_approx solid;
-	}
-	input[type=submit] {
-		width: auto;
-		background: none;
-		border: none;
-		color: $color_domino_approx;
-		display: inline-block;
-		border-bottom: 1px dotted $color_domino_approx;
-		text-transform: uppercase;
-		cursor: pointer;
-	}
-	p {
-		font-size: 24px;
-	}
+  text-align: center;
+  margin: 15% auto 0;
+  max-width: 25%;
+  min-width: 320px;
+  margin-bottom: 4%;
 }
+
+/* line 187, ../scss/style.scss */
+.contact-form label, .contact-form input, .contact-form textarea {
+  text-align: left;
+  display: block;
+  width: 100%;
+}
+
+/* line 192, ../scss/style.scss */
+.contact-form label {
+  color: #8E9090;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+
+/* line 197, ../scss/style.scss */
+.contact-form input, .contact-form textarea {
+  border: 2px #8E9090 solid;
+  margin-bottom: 20px;
+  padding: 7px 6px 6px;
+}
+
+/* line 202, ../scss/style.scss */
+.contact-form input[name=phone], .contact-form input[name=city], .contact-form input[name=broker] {
+  border: 2px #8F857B solid;
+}
+
+/* line 205, ../scss/style.scss */
+.contact-form textarea {
+  border: 2px #8C7459 solid;
+  min-height: 100px;
+  resize: none;
+}
+
+/* line 211, ../scss/style.scss */
+.contact-form input[type=submit] {
+  width: auto;
+  background: none;
+  border: none;
+  color: #8C7459;
+  display: inline-block;
+  border-bottom: 1px dotted #8C7459;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* line 221, ../scss/style.scss */
+.contact-form p {
+  font-size: 24px;
+}
+
+/* line 225, ../scss/style.scss */
 .about {
-	margin: 2% auto;
-	margin-bottom: 15%;
-	font-size: 24px;
-	line-height: 1.4em;
+  margin: 2% auto;
+  margin-bottom: 15%;
+  font-size: 24px;
+  line-height: 1.4em;
 }
-@media only screen and(min-width: 750px) {
-	.about {
-		max-width: 25%;
-	}
-	.address-info {
-		max-width: 25%;
-	}
-	.building {
-		width: 208px;
-		div {
-			width: 8px;
-			margin-left: 8px;
-		}
-	}
-	footer {
-		display: block;
-	}
-	.base {
-		display: block;
-		width: 550px;
-		margin-left: -254px;
-		span {
-			border-width: 8px;
-		}
-		.lsquare {
-			width: 208px;
-			left: 54px;
-		}
-		.rsquare {
-			width: 101px;
-		}
-		.bottom {
-			width: 58px;
-			left: 4px;
-		}
-		.top {
-			width: 98px;
-			height: 54px;
-			top: 36px;
-			left: 90px;
-		}
-		.roof {
-			width: 70px;
-			height: 70px;
-			top: 0;
-			left: 104.6px;
-		}
-	}
-	.comparison-places div {
-		.feet {
-			font-size: 16px;
-		}
-		.info {
-			font-size: 16px;
-			padding: 0 10px;
-			span {
-				display: inline-block;
-				span {
-					display: inline-block;
-				}
-			}
-		}
-	}
+@media only screen and (min-width: 750px) {
+  /* line 225, ../scss/style.scss */
+  .about {
+    max-width: 25%;
+  }
 }
+
+/* line 235, ../scss/style.scss */
 .address-info {
-	margin: 2% auto;
-	margin-bottom: 15%;
-	font-size: 16px;
-	line-height: 1.4em;
-	text-align: center;
-	text-transform: uppercase;
+  margin: 2% auto;
+  margin-bottom: 15%;
+  font-size: 16px;
+  line-height: 1.4em;
+  text-align: center;
+  text-transform: uppercase;
 }
+@media only screen and (min-width: 750px) {
+  /* line 235, ../scss/style.scss */
+  .address-info {
+    max-width: 25%;
+  }
+}
+
+/* line 246, ../scss/style.scss */
 .foundation {
-	position: relative;
+  position: relative;
 }
+
+/* line 249, ../scss/style.scss */
 .building {
-	width: 104px;
-	margin: 40px auto 0;
-	div {
-		display: inline-block;
-		margin-right: -0.25em;
-		background: $black;
-		min-height: 10px;
-		vertical-align: bottom;
-		width: 4px;
-		margin-left: 4px;
-	}
-	.one {
-		height: 1215px;
-		background: $color_stack_approx;
-		margin-bottom: 163px;
-	}
-	.two {
-		height: 1692px;
-		background: $color_stack_approx;
-		margin-bottom: 163px;
-	}
-	.three {
-		height: 1975px;
-		background: $color_stack_approx;
-		margin-bottom: 163px;
-	}
-	.four {
-		height: 2164px;
-		background: $color_stack_approx;
-		margin-bottom: 163px;
-	}
-	.five {
-		height: 2314px;
-		background: $color_schooner_approx;
-		margin-bottom: 163px;
-	}
-	.six {
-		height: 2423px;
-		background: $color_schooner_approx;
-		margin-bottom: 163px;
-	}
-	.seven {
-		height: 2400px;
-		background: $color_schooner_approx;
-		margin-bottom: 300px;
-	}
-	.eight {
-		height: 2506px;
-		background: $color_schooner_approx;
-		margin-bottom: 300px;
-	}
-	.nine {
-		height: 2578px;
-		background: $color_schooner_approx;
-		margin-bottom: 300px;
-	}
-	.ten {
-		height: 2538px;
-		background: $color_domino_approx;
-		margin-bottom: 414px;
-	}
-	.eleven {
-		height: 2616px;
-		background: $color_domino_approx;
-		margin-bottom: 414px;
-	}
-	.twelve {
-		height: 2699px;
-		background: $color_domino_approx;
-		margin-bottom: 414px;
-	}
-	.thirteen {
-		height: 2873px;
-		background: $color_domino_approx;
-		margin-bottom: 414px;
-	}
+  width: 104px;
+  margin: 40px auto 0;
 }
-.comparison-places {
-	div {
-		.feet {
-			float: left;
-			background: $white;
-			padding: 0 10px 0 0;
-			position: relative;
-			font-size: 13px;
-			span {
-				height: 3px;
-				width: 28px;
-				background: $color_stack_approx;
-				display: inline-block;
-				margin: 2px 0 3px 8px;
-			}
-		}
-		.info {
-			font-size: 13px;
-			line-height: 1.2em;
-			float: right;
-			text-align: left;
-			background: $white;
-			padding: 0 0 0 5px;
-			color: $color_domino_approx;
-			span {
-				color: $color_stack_approx;
-				display: block;
-				font-size: 12px;
-				span {
-					display: none;
-				}
-			}
-		}
-	}
-	hr {
-		position: absolute;
-		border: none;
-		border-bottom: 1px $color_celeste_approx dotted;
-		width: 100%;
-		margin: 0;
-		padding-bottom: 11px;
-		z-index: -1;
-	}
-	> div {
-		width: 100%;
-		height: 24px;
-		position: absolute;
-		left: 0;
-		right: 0;
-		margin-bottom: -10px;
-	}
+@media only screen and (min-width: 750px) {
+  /* line 249, ../scss/style.scss */
+  .building {
+    width: 208px;
+  }
 }
+
+/* line 256, ../scss/style.scss */
+.building div {
+  display: inline-block;
+  margin-right: -0.25em;
+  background: #000;
+  min-height: 10px;
+  vertical-align: bottom;
+  width: 4px;
+  margin-left: 4px;
+}
+@media only screen and (min-width: 750px) {
+  /* line 256, ../scss/style.scss */
+  .building div {
+    width: 8px;
+    margin-left: 8px;
+  }
+}
+
+/* line 270, ../scss/style.scss */
+.building .one {
+  height: 1215px;
+  background: #8e9090;
+  margin-bottom: 163px;
+}
+
+/* line 275, ../scss/style.scss */
+.building .two {
+  height: 1692px;
+  background: #8e9090;
+  margin-bottom: 163px;
+}
+
+/* line 280, ../scss/style.scss */
+.building .three {
+  height: 1975px;
+  background: #8e9090;
+  margin-bottom: 163px;
+}
+
+/* line 285, ../scss/style.scss */
+.building .four {
+  height: 2164px;
+  background: #8e9090;
+  margin-bottom: 163px;
+}
+
+/* line 290, ../scss/style.scss */
+.building .five {
+  height: 2314px;
+  background: #8e857b;
+  margin-bottom: 163px;
+}
+
+/* line 295, ../scss/style.scss */
+.building .six {
+  height: 2423px;
+  background: #8e857b;
+  margin-bottom: 163px;
+}
+
+/* line 300, ../scss/style.scss */
+.building .seven {
+  height: 2400px;
+  background: #8e857b;
+  margin-bottom: 300px;
+}
+
+/* line 305, ../scss/style.scss */
+.building .eight {
+  height: 2506px;
+  background: #8e857b;
+  margin-bottom: 300px;
+}
+
+/* line 310, ../scss/style.scss */
+.building .nine {
+  height: 2578px;
+  background: #8e857b;
+  margin-bottom: 300px;
+}
+
+/* line 315, ../scss/style.scss */
+.building .ten {
+  height: 2538px;
+  background: #8c7459;
+  margin-bottom: 414px;
+}
+
+/* line 320, ../scss/style.scss */
+.building .eleven {
+  height: 2616px;
+  background: #8c7459;
+  margin-bottom: 414px;
+}
+
+/* line 325, ../scss/style.scss */
+.building .twelve {
+  height: 2699px;
+  background: #8c7459;
+  margin-bottom: 414px;
+}
+
+/* line 330, ../scss/style.scss */
+.building .thirteen {
+  height: 2873px;
+  background: #8c7459;
+  margin-bottom: 414px;
+}
+
+/* line 335, ../scss/style.scss */
+.comparison-places > div {
+  width: 100%;
+  height: 24px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-bottom: -10px;
+}
+
+/* line 343, ../scss/style.scss */
+.comparison-places div .feet {
+  float: left;
+  background: #fff;
+  padding: 0 10px 0 0;
+  position: relative;
+  font-size: 13px;
+}
+@media only screen and (min-width: 750px) {
+  /* line 343, ../scss/style.scss */
+  .comparison-places div .feet {
+    font-size: 16px;
+  }
+}
+
+/* line 353, ../scss/style.scss */
+.comparison-places div .feet span {
+  height: 3px;
+  width: 28px;
+  background: #8e9090;
+  display: inline-block;
+  margin: 2px 0 3px 8px;
+}
+
+/* line 360, ../scss/style.scss */
+.comparison-places div .info {
+  font-size: 13px;
+  line-height: 1.2em;
+  float: right;
+  text-align: left;
+  background: #fff;
+  padding: 0 0 0 5px;
+  color: #8C7459;
+}
+@media only screen and (min-width: 750px) {
+  /* line 360, ../scss/style.scss */
+  .comparison-places div .info {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+}
+
+/* line 375, ../scss/style.scss */
+.comparison-places div .info span {
+  color: #8E9090;
+  display: block;
+  font-size: 12px;
+}
+@media only screen and (min-width: 750px) {
+  /* line 375, ../scss/style.scss */
+  .comparison-places div .info span {
+    display: inline-block;
+  }
+}
+
+/* line 383, ../scss/style.scss */
+.comparison-places div .info span span {
+  display: none;
+}
+@media only screen and (min-width: 750px) {
+  /* line 383, ../scss/style.scss */
+  .comparison-places div .info span span {
+    display: inline-block;
+  }
+}
+
+/* line 389, ../scss/style.scss */
+.comparison-places hr {
+  position: absolute;
+  border: none;
+  border-bottom: 1px #ccc dotted;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 11px;
+  z-index: -1;
+}
+
+/* line 398, ../scss/style.scss */
 footer {
-	width: 90%;
-	margin: 0 5% 40px;
-	float: left;
-	display: none;
+  width: 90%;
+  margin: 0 5% 40px;
+  float: left;
+  display: none;
 }
+@media only screen and (min-width: 750px) {
+  /* line 398, ../scss/style.scss */
+  footer {
+    display: block;
+  }
+}
+
+/* line 407, ../scss/style.scss */
 .credits {
-	font-size: 14px;
-	line-height: 16px;
-	float: left;
+  font-size: 14px;
+  line-height: 16px;
+  float: left;
 }
+
+/* line 412, ../scss/style.scss */
 .foot2 {
-	margin-top: 20px;
-	font-size: 12px;
-	line-height: 12px;
+  margin-top: 20px;
+  font-size: 12px;
+  line-height: 12px;
 }
-.legal {
-	p {
-		font-size: 10px;
-		line-height: 10px;
-		float: right;
-		width: 200px;
-		margin-right: 10px;
-		text-align: justify;
-		color: $white;
-	}
-	span {
-		font-size: 14px;
-		float: right;
-		cursor: pointer;
-	}
-	&:hover p {
-		color: $color_domino_approx;
-	}
+
+/* line 417, ../scss/style.scss */
+.legal p {
+  font-size: 10px;
+  line-height: 10px;
+  float: right;
+  width: 200px;
+  margin-right: 10px;
+  text-align: justify;
+  color: white;
+  -webkit-transition: color 300ms ease-in-out;
+  -moz-transition: color 300ms ease-in-out;
+  -ms-transition: color 300ms ease-in-out;
+  -o-transition: color 300ms ease-in-out;
+  -webkit-backface-visibility: hidden;
 }
+
+/* line 427, ../scss/style.scss */
+.legal span {
+  font-size: 14px;
+  float: right;
+  cursor: pointer;
+}
+
+/* line 432, ../scss/style.scss */
+.legal:hover p {
+  color: #8C7459;
+}
+
+/* line 435, ../scss/style.scss */
 .base {
-	display: block;
-	position: absolute;
-	bottom: 0;
-	margin-left: -102px;
-	width: 252px;
-	height: 500px;
-	span {
-		border-width: 4px;
-		border-color: $color_domino_approx;
-		display: block;
-		position: absolute;
-	}
-	.lsquare {
-		height: 418px;
-		width: 89px;
-		left: 17px;
-		bottom: 0;
-		border-top-style: solid;
-		border-left-style: solid;
-	}
-	.rsquare {
-		height: 418px;
-		width: 50px;
-		right: 0;
-		bottom: 0;
-		border-top-style: solid;
-		border-right-style: solid;
-	}
-	.bottom {
-		z-index: 1;
-		width: 29px;
-		left: -8px;
-		bottom: 0;
-		height: 200px;
-		background: $white;
-		border-top-style: solid;
-		border-left-style: solid;
-	}
-	.top {
-		top: 52px;
-		background: $white;
-		z-index: 1;
-		left: 30px;
-		width: 49px;
-		height: 34px;
-		border-left-style: solid;
-		border-right-style: solid;
-	}
-	.roof {
-		top: 35px;
-		left: 36.6px;
-		width: 35px;
-		height: 35px;
-		border-left-style: solid;
-		border-top-style: solid;
-		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
-		transform: rotate(45deg);
-	}
+  display: block;
+  position: absolute;
+  bottom: 0;
+  margin-left: -102px;
+  width: 252px;
+  height: 500px;
+}
+@media only screen and (min-width: 750px) {
+  /* line 435, ../scss/style.scss */
+  .base {
+    display: block;
+  }
+}
+@media only screen and (min-width: 750px) {
+  /* line 435, ../scss/style.scss */
+  .base {
+    width: 550px;
+    margin-left: -254px;
+  }
+}
+/* line 450, ../scss/style.scss */
+.base span {
+  border-width: 4px;
+  border-color: #8c7459;
+  display: block;
+  position: absolute;
+}
+@media only screen and (min-width: 750px) {
+  /* line 450, ../scss/style.scss */
+  .base span {
+    border-width: 8px;
+  }
+}
+/* line 459, ../scss/style.scss */
+.base .lsquare {
+  height: 418px;
+  width: 89px;
+  left: 17px;
+  bottom: 0;
+  border-top-style: solid;
+  border-left-style: solid;
+}
+@media only screen and (min-width: 750px) {
+  /* line 459, ../scss/style.scss */
+  .base .lsquare {
+    width: 208px;
+    left: 54px;
+  }
+}
+/* line 471, ../scss/style.scss */
+.base .rsquare {
+  height: 418px;
+  width: 50px;
+  right: 0;
+  bottom: 0;
+  border-top-style: solid;
+  border-right-style: solid;
+}
+@media only screen and (min-width: 750px) {
+  /* line 471, ../scss/style.scss */
+  .base .rsquare {
+    width: 101px;
+  }
+}
+/* line 482, ../scss/style.scss */
+.base .bottom {
+  z-index: 1;
+  width: 29px;
+  left: -8px;
+  bottom: 0;
+  height: 200px;
+  background: white;
+  border-top-style: solid;
+  border-left-style: solid;
+}
+@media only screen and (min-width: 750px) {
+  /* line 482, ../scss/style.scss */
+  .base .bottom {
+    width: 58px;
+    left: 4px;
+  }
+}
+/* line 496, ../scss/style.scss */
+.base .top {
+  top: 52px;
+  background: white;
+  z-index: 1;
+  left: 30px;
+  width: 49px;
+  height: 34px;
+  border-left-style: solid;
+  border-right-style: solid;
+}
+@media only screen and (min-width: 750px) {
+  /* line 496, ../scss/style.scss */
+  .base .top {
+    width: 98px;
+    height: 54px;
+    top: 36px;
+    left: 90px;
+  }
+}
+/* line 512, ../scss/style.scss */
+.base .roof {
+  top: 35px;
+  left: 36.6px;
+  width: 35px;
+  height: 35px;
+  border-left-style: solid;
+  border-top-style: solid;
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+}
+@media only screen and (min-width: 750px) {
+  /* line 512, ../scss/style.scss */
+  .base .roof {
+    width: 70px;
+    height: 70px;
+    top: 0;
+    left: 104.6px;
+  }
 }
