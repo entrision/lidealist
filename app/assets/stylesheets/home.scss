@@ -1,52 +1,43 @@
 @keyframes fadein {
-  /* line 14, ../scss/_mixins.scss */
   from {
     opacity: 0;
   }
 
-  /* line 14, ../scss/_mixins.scss */
   to {
     opacity: 1;
   }
 }
 
 @-moz-keyframes fadein {
-  /* line 15, ../scss/_mixins.scss */
   from {
     opacity: 0;
   }
 
-  /* line 15, ../scss/_mixins.scss */
   to {
     opacity: 1;
   }
 }
 
 @-webkit-keyframes fadein {
-  /* line 16, ../scss/_mixins.scss */
   from {
     opacity: 0;
   }
 
-  /* line 16, ../scss/_mixins.scss */
   to {
     opacity: 1;
   }
 }
 
 @-o-keyframes fadein {
-  /* line 17, ../scss/_mixins.scss */
   from {
     opacity: 0;
   }
 
-  /* line 17, ../scss/_mixins.scss */
   to {
     opacity: 1;
   }
 }
 
-/* line 2, ../scss/_reset.scss */
 html, body, div, span, applet, object, iframe, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, label, legend, p, blockquote, table, caption, tbody, tfoot, thead, tr, th, td {
   margin: 0;
   padding: 0;
@@ -59,82 +50,68 @@ html, body, div, span, applet, object, iframe, a, abbr, acronym, address, big, c
   vertical-align: baseline;
 }
 
-/* line 2, ../scss/_reset.scss */
 body {
   line-height: 1;
   color: black;
   background: white;
 }
 
-/* line 2, ../scss/_reset.scss */
 :focus {
   outline: 0;
 }
 
-/* line 2, ../scss/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 2, ../scss/_reset.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
 }
 
-/* line 2, ../scss/_reset.scss */
 fieldset, img {
   border: 0;
 }
 
-/* line 2, ../scss/_reset.scss */
 address, caption, cite, code, dfn, em, strong, th, var {
   font-style: normal;
   font-weight: normal;
 }
 
-/* line 2, ../scss/_reset.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 2, ../scss/_reset.scss */
 h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
   font-weight: normal;
 }
 
-/* line 2, ../scss/_reset.scss */
 blockquote:before, blockquote:after, q:before, q:after {
   content: "";
 }
 
-/* line 2, ../scss/_reset.scss */
 blockquote, q {
   quotes: "" "";
 }
 
-/* line 2, ../scss/_reset.scss */
 abbr, acronym {
   border: 0;
 }
 
 @font-face {
   font-family: 'Minion Pro';
-  src: url("../fonts/MinionPro-Regular.eot"), url("../fonts/MinionPro-Regular.otf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Minion Pro';
-  src: url("../fonts/MinionPro-It.eot"), url("../fonts/MinionPro-It.otf");
   font-weight: italic;
   font-style: italic;
 }
 
-/* line 23, ../scss/_type.scss */
 body {
   font-family: 'Minion Pro', sans-serif;
   line-height: 1.75em;
@@ -143,30 +120,25 @@ body {
   -webkit-text-size-adjust: none;
 }
 
-/* line 31, ../scss/_type.scss */
 ::selection {
   background: black;
   color: #fff;
 }
 
-/* line 35, ../scss/_type.scss */
 ::-moz-selection {
   background: black;
   color: #fff;
 }
 
-/* line 52, ../scss/_type.scss */
 p {
   margin-bottom: .75em;
   max-width: 800px;
 }
 
-/* line 57, ../scss/_type.scss */
 p.lg {
   font-size: 1.5em;
 }
 
-/* line 61, ../scss/_type.scss */
 a {
   -webkit-transition: color 0.2s ease-in-out, border 0.2s ease-in-out, background 0.2s ease-in-out;
   -moz-transition: color 0.2s ease-in-out, border 0.2s ease-in-out, background 0.2s ease-in-out;
@@ -177,22 +149,18 @@ a {
   color: black;
 }
 
-/* line 67, ../scss/_type.scss */
 a:hover {
   border-bottom: 1px solid black;
 }
 
-/* line 71, ../scss/_type.scss */
 p a {
   border-bottom: 1px solid #959595;
 }
 
-/* line 75, ../scss/_type.scss */
 p a:hover {
   border-bottom: 1px solid black;
 }
 
-/* line 84, ../scss/_type.scss */
 input[type=text],
 input[type=email],
 input[type=password],
@@ -206,7 +174,6 @@ textarea {
   background: transparent;
 }
 
-/* line 100, ../scss/_type.scss */
 input[type=text]:active,
 input[type=email]:active,
 input[type=password]:active,
@@ -220,7 +187,6 @@ textarea:focus {
   border-color: black;
 }
 
-/* line 106, ../scss/_type.scss */
 .button,
 input[type=submit],
 button {
@@ -240,9 +206,9 @@ button {
   color: #fff;
   background: black;
   border: 1px solid black;
+  border-bottom: 1px dotted #8C7459;
 }
 
-/* line 121, ../scss/_type.scss */
 .button:hover,
 input[type=submit]:hover,
 button:hover {
@@ -250,18 +216,15 @@ button:hover {
   background: black;
 }
 
-/* line 23, ../scss/style.scss */
 *, *:before, *:after {
   box-sizing: border-box;
 }
 
-/* line 28, ../scss/style.scss */
 body {
   color: #8C7459;
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 33, ../scss/style.scss */
 img {
   max-width: 150%;
   height: auto;
@@ -272,12 +235,10 @@ img {
   -webkit-backface-visibility: hidden;
 }
 
-/* line 38, ../scss/style.scss */
 a {
   color: #8C7459;
 }
 
-/* line 41, ../scss/style.scss */
 a:hover img {
   filter: alpha(opacity=50);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
@@ -286,19 +247,16 @@ a:hover img {
   opacity: 0.5;
 }
 
-/* line 47, ../scss/style.scss */
 .container {
   width: 90%;
   margin: 5% 5% 0 5%;
 }
 
-/* line 51, ../scss/style.scss */
 .container.foundation-wrap {
   width: 96%;
   margin: 0 2% 0 2%;
 }
 @media only screen and (min-width: 900px) {
-  /* line 51, ../scss/style.scss */
   .container.foundation-wrap {
     width: 70%;
     max-width: 1200px;
@@ -306,7 +264,6 @@ a:hover img {
   }
 }
 
-/* line 61, ../scss/style.scss */
 .quote-overlay {
   z-index: 4;
   position: fixed;
@@ -317,36 +274,34 @@ a:hover img {
   background: #fff;
   opacity: 1;
   visibility: visible;
-  -webkit-transition: opacity 0.1s ease-in-out, visibility 0.1s ease-in-out;
-  -moz-transition: opacity 0.1s ease-in-out, visibility 0.1s ease-in-out;
-  -ms-transition: opacity 0.1s ease-in-out, visibility 0.1s ease-in-out;
-  -o-transition: opacity 0.1s ease-in-out, visibility 0.1s ease-in-out;
-  -webkit-backface-visibility: hidden;
-  -webkit-animation-name: fadeOut;
-  -moz-animation-name: fadeOut;
-  -o-animation-name: fadeOut;
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -o-animation-duration: 1s;
-  -webkit-animation-delay: 7s;
-  -moz-animation-delay: 7s;
-  -o-animation-delay: 7s;
-  -webkit-animation-iteration-count: 1;
-  -moz-animation-iteration-count: 1;
-  -o-animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  -o-animation-fill-mode: forwards;
+  // -webkit-transition: opacity 0.1s ease-in-out, visibility 0.1s ease-in-out;
+  // -moz-transition: opacity 0.1s ease-in-out, visibility 0.1s ease-in-out;
+  // -ms-transition: opacity 0.1s ease-in-out, visibility 0.1s ease-in-out;
+  // -o-transition: opacity 0.1s ease-in-out, visibility 0.1s ease-in-out;
+  // -webkit-backface-visibility: hidden;
+  // -webkit-animation-name: fadeOut;
+  // -moz-animation-name: fadeOut;
+  // -o-animation-name: fadeOut;
+  // -webkit-animation-duration: 1s;
+  // -moz-animation-duration: 1s;
+  // -o-animation-duration: 1s;
+  // -webkit-animation-delay: 7s;
+  // -moz-animation-delay: 7s;
+  // -o-animation-delay: 7s;
+  // -webkit-animation-iteration-count: 1;
+  // -moz-animation-iteration-count: 1;
+  // -o-animation-iteration-count: 1;
+  // -webkit-animation-fill-mode: forwards;
+  // -moz-animation-fill-mode: forwards;
+  // -o-animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes fadeOut {
-  /* line 89, ../scss/style.scss */
   from {
     opacity: 1;
     visibility: visible;
   }
 
-  /* line 90, ../scss/style.scss */
   to {
     opacity: 0;
     visibility: hidden;
@@ -354,13 +309,11 @@ a:hover img {
 }
 
 @-moz-keyframes fadeOut {
-  /* line 93, ../scss/style.scss */
   from {
     opacity: 1;
     visibility: visible;
   }
 
-  /* line 94, ../scss/style.scss */
   to {
     opacity: 0;
     visibility: hidden;
@@ -368,27 +321,23 @@ a:hover img {
 }
 
 @-o-keyframes fadeOut {
-  /* line 97, ../scss/style.scss */
   from {
     opacity: 1;
     visibility: visible;
   }
 
-  /* line 98, ../scss/style.scss */
   to {
     opacity: 0;
     visibility: hidden;
   }
 }
 
-/* line 101, ../scss/style.scss */
 .quote-wrap {
   display: table;
   width: 100%;
   height: 100%;
 }
 
-/* line 106, ../scss/style.scss */
 .quote {
   display: table-cell;
   vertical-align: middle;
@@ -396,7 +345,6 @@ a:hover img {
   color: #8C7459;
 }
 
-/* line 112, ../scss/style.scss */
 .quote blockquote {
   margin: 0 auto;
   max-width: 20%;
@@ -406,7 +354,6 @@ a:hover img {
   margin-bottom: 2%;
 }
 
-/* line 120, ../scss/style.scss */
 .quote .author {
   margin: 0 auto;
   max-width: 20%;
@@ -415,19 +362,16 @@ a:hover img {
   text-transform: uppercase;
 }
 
-/* line 127, ../scss/style.scss */
 .quote .source {
   margin: 0 auto;
   max-width: 20%;
   display: block;
 }
 
-/* line 132, ../scss/style.scss */
 .sidebar-left {
   margin: 10% 10%;
 }
 @media only screen and (min-width: 1024px) {
-  /* line 132, ../scss/style.scss */
   .sidebar-left {
     z-index: 5;
     margin-left: 5%;
@@ -436,9 +380,7 @@ a:hover img {
   }
 }
 
-/* line 142, ../scss/style.scss */
 .sidebar-left .logo {
-  background-image: url("../images/111w57.svg");
   width: 200px;
   height: 77px;
   display: block;
@@ -446,12 +388,10 @@ a:hover img {
   margin-bottom: 25px;
 }
 
-/* line 150, ../scss/style.scss */
 .sidebar-left .logo:hover {
   border-bottom: 0;
 }
 
-/* line 153, ../scss/style.scss */
 .sidebar-left .register-link {
   text-transform: uppercase;
   letter-spacing: .12em;
@@ -460,7 +400,6 @@ a:hover img {
   color: #8C7459;
 }
 
-/* line 160, ../scss/style.scss */
 .sidebar-left p {
   margin-top: 10px;
   max-width: 170px;
@@ -469,7 +408,6 @@ a:hover img {
   line-height: 1.5em;
 }
 
-/* line 167, ../scss/style.scss */
 .sidebar-right {
   color: #8E9090;
   z-index: 3;
@@ -481,7 +419,6 @@ a:hover img {
   margin-top: -90px;
 }
 
-/* line 180, ../scss/style.scss */
 .contact-form {
   text-align: center;
   margin: 15% auto 0;
@@ -490,42 +427,37 @@ a:hover img {
   margin-bottom: 4%;
 }
 
-/* line 187, ../scss/style.scss */
 .contact-form label, .contact-form input, .contact-form textarea {
   text-align: left;
   display: block;
   width: 100%;
 }
 
-/* line 192, ../scss/style.scss */
 .contact-form label {
   color: #8E9090;
   text-transform: uppercase;
   letter-spacing: .2em;
 }
 
-/* line 197, ../scss/style.scss */
 .contact-form input, .contact-form textarea {
   border: 2px #8E9090 solid;
   margin-bottom: 20px;
   padding: 7px 6px 6px;
 }
 
-/* line 202, ../scss/style.scss */
 .contact-form input[name=phone], .contact-form input[name=city], .contact-form input[name=broker] {
   border: 2px #8F857B solid;
 }
 
-/* line 205, ../scss/style.scss */
 .contact-form textarea {
   border: 2px #8C7459 solid;
   min-height: 100px;
   resize: none;
 }
 
-/* line 211, ../scss/style.scss */
 .contact-form input[type=submit] {
-  width: auto;
+    width: auto;
+    height: auto;
   background: none;
   border: none;
   color: #8C7459;
@@ -533,14 +465,14 @@ a:hover img {
   border-bottom: 1px dotted #8C7459;
   text-transform: uppercase;
   cursor: pointer;
+  padding: 0px;
+               margin: 0px;
 }
 
-/* line 221, ../scss/style.scss */
 .contact-form p {
   font-size: 24px;
 }
 
-/* line 225, ../scss/style.scss */
 .about {
   margin: 2% auto;
   margin-bottom: 15%;
@@ -548,13 +480,11 @@ a:hover img {
   line-height: 1.4em;
 }
 @media only screen and (min-width: 750px) {
-  /* line 225, ../scss/style.scss */
   .about {
     max-width: 25%;
   }
 }
 
-/* line 235, ../scss/style.scss */
 .address-info {
   margin: 2% auto;
   margin-bottom: 15%;
@@ -564,30 +494,25 @@ a:hover img {
   text-transform: uppercase;
 }
 @media only screen and (min-width: 750px) {
-  /* line 235, ../scss/style.scss */
   .address-info {
     max-width: 25%;
   }
 }
 
-/* line 246, ../scss/style.scss */
 .foundation {
   position: relative;
 }
 
-/* line 249, ../scss/style.scss */
 .building {
   width: 104px;
   margin: 40px auto 0;
 }
 @media only screen and (min-width: 750px) {
-  /* line 249, ../scss/style.scss */
   .building {
     width: 208px;
   }
 }
 
-/* line 256, ../scss/style.scss */
 .building div {
   display: inline-block;
   margin-right: -0.25em;
@@ -598,105 +523,90 @@ a:hover img {
   margin-left: 4px;
 }
 @media only screen and (min-width: 750px) {
-  /* line 256, ../scss/style.scss */
   .building div {
     width: 8px;
     margin-left: 8px;
   }
 }
 
-/* line 270, ../scss/style.scss */
 .building .one {
   height: 1215px;
   background: #8e9090;
   margin-bottom: 163px;
 }
 
-/* line 275, ../scss/style.scss */
 .building .two {
   height: 1692px;
   background: #8e9090;
   margin-bottom: 163px;
 }
 
-/* line 280, ../scss/style.scss */
 .building .three {
   height: 1975px;
   background: #8e9090;
   margin-bottom: 163px;
 }
 
-/* line 285, ../scss/style.scss */
 .building .four {
   height: 2164px;
   background: #8e9090;
   margin-bottom: 163px;
 }
 
-/* line 290, ../scss/style.scss */
 .building .five {
   height: 2314px;
   background: #8e857b;
   margin-bottom: 163px;
 }
 
-/* line 295, ../scss/style.scss */
 .building .six {
   height: 2423px;
   background: #8e857b;
   margin-bottom: 163px;
 }
 
-/* line 300, ../scss/style.scss */
 .building .seven {
   height: 2400px;
   background: #8e857b;
   margin-bottom: 300px;
 }
 
-/* line 305, ../scss/style.scss */
 .building .eight {
   height: 2506px;
   background: #8e857b;
   margin-bottom: 300px;
 }
 
-/* line 310, ../scss/style.scss */
 .building .nine {
   height: 2578px;
   background: #8e857b;
   margin-bottom: 300px;
 }
 
-/* line 315, ../scss/style.scss */
 .building .ten {
   height: 2538px;
   background: #8c7459;
   margin-bottom: 414px;
 }
 
-/* line 320, ../scss/style.scss */
 .building .eleven {
   height: 2616px;
   background: #8c7459;
   margin-bottom: 414px;
 }
 
-/* line 325, ../scss/style.scss */
 .building .twelve {
   height: 2699px;
   background: #8c7459;
   margin-bottom: 414px;
 }
 
-/* line 330, ../scss/style.scss */
 .building .thirteen {
   height: 2873px;
   background: #8c7459;
   margin-bottom: 414px;
 }
 
-/* line 335, ../scss/style.scss */
 .comparison-places > div {
   width: 100%;
   height: 24px;
@@ -706,7 +616,6 @@ a:hover img {
   margin-bottom: -10px;
 }
 
-/* line 343, ../scss/style.scss */
 .comparison-places div .feet {
   float: left;
   background: #fff;
@@ -715,13 +624,11 @@ a:hover img {
   font-size: 13px;
 }
 @media only screen and (min-width: 750px) {
-  /* line 343, ../scss/style.scss */
   .comparison-places div .feet {
     font-size: 16px;
   }
 }
 
-/* line 353, ../scss/style.scss */
 .comparison-places div .feet span {
   height: 3px;
   width: 28px;
@@ -730,7 +637,6 @@ a:hover img {
   margin: 2px 0 3px 8px;
 }
 
-/* line 360, ../scss/style.scss */
 .comparison-places div .info {
   font-size: 13px;
   line-height: 1.2em;
@@ -741,38 +647,32 @@ a:hover img {
   color: #8C7459;
 }
 @media only screen and (min-width: 750px) {
-  /* line 360, ../scss/style.scss */
   .comparison-places div .info {
     font-size: 16px;
     padding: 0 10px;
   }
 }
 
-/* line 375, ../scss/style.scss */
 .comparison-places div .info span {
   color: #8E9090;
   display: block;
   font-size: 12px;
 }
 @media only screen and (min-width: 750px) {
-  /* line 375, ../scss/style.scss */
   .comparison-places div .info span {
     display: inline-block;
   }
 }
 
-/* line 383, ../scss/style.scss */
 .comparison-places div .info span span {
   display: none;
 }
 @media only screen and (min-width: 750px) {
-  /* line 383, ../scss/style.scss */
   .comparison-places div .info span span {
     display: inline-block;
   }
 }
 
-/* line 389, ../scss/style.scss */
 .comparison-places hr {
   position: absolute;
   border: none;
@@ -783,7 +683,6 @@ a:hover img {
   z-index: -1;
 }
 
-/* line 398, ../scss/style.scss */
 footer {
   width: 90%;
   margin: 0 5% 40px;
@@ -791,27 +690,23 @@ footer {
   display: none;
 }
 @media only screen and (min-width: 750px) {
-  /* line 398, ../scss/style.scss */
   footer {
     display: block;
   }
 }
 
-/* line 407, ../scss/style.scss */
 .credits {
   font-size: 14px;
   line-height: 16px;
   float: left;
 }
 
-/* line 412, ../scss/style.scss */
 .foot2 {
   margin-top: 20px;
   font-size: 12px;
   line-height: 12px;
 }
 
-/* line 417, ../scss/style.scss */
 .legal p {
   font-size: 10px;
   line-height: 10px;
@@ -827,19 +722,16 @@ footer {
   -webkit-backface-visibility: hidden;
 }
 
-/* line 427, ../scss/style.scss */
 .legal span {
   font-size: 14px;
   float: right;
   cursor: pointer;
 }
 
-/* line 432, ../scss/style.scss */
 .legal:hover p {
   color: #8C7459;
 }
 
-/* line 435, ../scss/style.scss */
 .base {
   display: block;
   position: absolute;
@@ -849,19 +741,16 @@ footer {
   height: 500px;
 }
 @media only screen and (min-width: 750px) {
-  /* line 435, ../scss/style.scss */
   .base {
     display: block;
   }
 }
 @media only screen and (min-width: 750px) {
-  /* line 435, ../scss/style.scss */
   .base {
     width: 550px;
     margin-left: -254px;
   }
 }
-/* line 450, ../scss/style.scss */
 .base span {
   border-width: 4px;
   border-color: #8c7459;
@@ -869,12 +758,10 @@ footer {
   position: absolute;
 }
 @media only screen and (min-width: 750px) {
-  /* line 450, ../scss/style.scss */
   .base span {
     border-width: 8px;
   }
 }
-/* line 459, ../scss/style.scss */
 .base .lsquare {
   height: 418px;
   width: 89px;
@@ -884,13 +771,11 @@ footer {
   border-left-style: solid;
 }
 @media only screen and (min-width: 750px) {
-  /* line 459, ../scss/style.scss */
   .base .lsquare {
     width: 208px;
     left: 54px;
   }
 }
-/* line 471, ../scss/style.scss */
 .base .rsquare {
   height: 418px;
   width: 50px;
@@ -900,12 +785,10 @@ footer {
   border-right-style: solid;
 }
 @media only screen and (min-width: 750px) {
-  /* line 471, ../scss/style.scss */
   .base .rsquare {
     width: 101px;
   }
 }
-/* line 482, ../scss/style.scss */
 .base .bottom {
   z-index: 1;
   width: 29px;
@@ -917,13 +800,11 @@ footer {
   border-left-style: solid;
 }
 @media only screen and (min-width: 750px) {
-  /* line 482, ../scss/style.scss */
   .base .bottom {
     width: 58px;
     left: 4px;
   }
 }
-/* line 496, ../scss/style.scss */
 .base .top {
   top: 52px;
   background: white;
@@ -935,7 +816,6 @@ footer {
   border-right-style: solid;
 }
 @media only screen and (min-width: 750px) {
-  /* line 496, ../scss/style.scss */
   .base .top {
     width: 98px;
     height: 54px;
@@ -943,7 +823,6 @@ footer {
     left: 90px;
   }
 }
-/* line 512, ../scss/style.scss */
 .base .roof {
   top: 35px;
   left: 36.6px;
@@ -952,13 +831,10 @@ footer {
   border-left-style: solid;
   border-top-style: solid;
   -ms-transform: rotate(45deg);
-  /* IE 9 */
   -webkit-transform: rotate(45deg);
-  /* Chrome, Safari, Opera */
   transform: rotate(45deg);
 }
 @media only screen and (min-width: 750px) {
-  /* line 512, ../scss/style.scss */
   .base .roof {
     width: 70px;
     height: 70px;
