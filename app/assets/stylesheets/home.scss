@@ -380,6 +380,32 @@ a:hover img {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .sidebar-left {
+    display: table;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    top: 23%;
+
+    .logo {
+      width: 300px !important;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  #content {
+    position: relative;
+
+    .quote-overlay {
+      position: absolute;
+    }
+  }
+}
+
 .sidebar-left .logo {
   width: 200px;
   height: 77px;
