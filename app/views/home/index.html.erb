@@ -3,14 +3,22 @@
     <%= image_tag 'logo.png' %>
   </a>
 
-  <%= link_to 'Register', '#', class: 'register-link', data: { display_form: nil } %>
+  <%#= link_to 'Register', '#', class: 'register-link', data: { display_form: nil } %>
 </div>
 <div id="content">
   <div class="quote-overlay">
     <div class="quote-wrap">
       <div class="quote">
-        <blockquote>Get early access to our upcoming redesigned platform. Discover unique Art, Furniture and Services. The World’s Finest. All In One Place.</blockquote>
-        REGISTER FOR EARLY ACCESS
+        <blockquote>
+          Get early access<br />
+          to our upcoming<br />
+          redesigned platform.<br />
+          Discover unique Art,<br />
+          Furniture and Services.<br /><br />
+          The World’s Finest.<br />
+          All In One Place.
+        </blockquote>
+        <%= link_to 'REGISTER FOR EARLY ACCESS', '#', class: 'register-link', data: { display_form: nil } %>
       </div>
     </div>
   </div>
