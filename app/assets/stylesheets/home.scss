@@ -353,6 +353,23 @@ a:hover img {
   margin-bottom: 2%;
 }
 
+@media only screen and (min-width: 481px) and (max-width: 985px) {
+  .quote blockquote {
+    font-size: 36px;
+    margin: -60px auto 2%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .quote blockquote {
+    font-size: 34px;
+  }
+
+  .hearst-logo {
+    margin: 60px auto 25px !important;
+  }
+}
+
 .quote .author {
   margin: 0 auto;
   max-width: 20%;
@@ -375,7 +392,7 @@ a:hover img {
     z-index: 5;
     margin-left: 5%;
     position: fixed;
-    top: 23%;
+    top: 9%;
   }
 }
 
@@ -519,8 +536,7 @@ a:hover img {
 }
 
 .address-info {
-  margin: 2% auto;
-  margin-bottom: 15%;
+  margin: 2% auto 0;
   font-size: 16px;
   line-height: 1.4em;
   text-align: center;
@@ -874,4 +890,11 @@ footer {
     top: 0;
     left: 104.6px;
   }
+}
+
+.hearst-logo {
+  display: table;
+  margin: 25px auto;
+  position: relative;
+  z-index: 100;
 }
