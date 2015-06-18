@@ -370,6 +370,12 @@ a:hover img {
   }
 }
 
+@media only screen and (min-width: 1110px) and (max-width: 1230px) {
+  .hearst-logo {
+    margin: 45px auto 25px !important;
+  }
+}
+
 .quote .author {
   margin: 0 auto;
   max-width: 20%;
